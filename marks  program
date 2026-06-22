@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+	float Scienc;
+	float Maths;
+	float English;
+	float marks;
+	float Percentage;	
+	
+	printf("Scienc Marks Enter : ");
+	scanf("%f",&Scienc);
+	
+	printf("Maths Marks Enter : ");
+	scanf("%f",&Maths);
+	
+	printf("English Marks Enter : ");
+	scanf("%f",&English);
+	
+	marks = Scienc+Maths+English;
+	
+    printf("the total marks = %f\n",marks);
+     
+   Percentage = (marks/300)*100;
+   
+   printf("Your Percentage is = %f\n",Percentage);
+   
+   if(Percentage >= 88 && Percentage < 100){
+   	printf("your grade is A");
+   }
+   
+   else if(Percentage >= 70 && Percentage < 85){
+   	printf("your grade is B");
+   }
+   else if(Percentage >= 60 && Percentage < 70){
+   	printf("your grade is c");
+   	
+	}
+   	else if(Percentage >= 33 && Percentage < 60){
+   		printf("your grade is d");
+	   }
+	   else{
+	   	printf("your fail");
+	   }
+   
+   return 0;
+}
